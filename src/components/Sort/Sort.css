@@ -1,0 +1,64 @@
+.sort {
+  height: 8rem;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  animation: anime3 1.2s 0.5s forwards;
+  opacity: 0;
+}
+
+.styled-select {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.styled-select,
+.styled-select select {
+  width: 240px;
+}
+select:focus {
+  outline: none;
+}
+.styled-select select {
+  height: 34px;
+  padding: 5px 0 5px 5px;
+  background: transparent;
+  border: none;
+}
+
+@-moz-document url-prefix() {
+  .styled-select select {
+    width: 110%;
+  }
+}
+
+.fa-sort-desc {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  font-size: 24px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+@keyframes anime3 {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+
+  90% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

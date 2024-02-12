@@ -1,0 +1,100 @@
+.post-user-form {
+  background-color: #dcf2f1;
+  margin: 0 -2.4rem -2.4rem -2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+
+  animation: anime1 3s 1s forwards;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 5.6rem 0;
+  padding: 6rem;
+  width: 60%;
+}
+
+.form-title {
+  text-align: center;
+  color: #333;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2.6rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.name-div {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.name-div div {
+  flex: 1;
+}
+
+.address-input {
+  display: flex;
+  gap: 2rem;
+}
+
+@keyframes anime1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*600px and below */
+@media (max-width: 640px) {
+  .address-input,
+  .name-div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form {
+    padding: 3rem;
+    width: 90%;
+  }
+  button {
+    width: 100%;
+    margin-top: 6px;
+  }
+}
